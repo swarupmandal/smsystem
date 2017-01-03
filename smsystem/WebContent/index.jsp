@@ -26,7 +26,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/bootstrap/js/ie-emulation-modes-warning.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -62,27 +62,27 @@
            <form action="UserRegister" method="post">
            
              <div class="form-group">
-              <input type="text" name="name" class="form-control" placeholder="Full Name">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Full Name">
              </div>
              
              <div class="form-group">
-              <input type="text" name="address" class="form-control" placeholder="Full Address">
+              <input type="text" name="address" id="address" class="form-control" placeholder="Full Address">
              </div>
  
              <div class="form-group">
-              <input type="email" name="email" class="form-control" placeholder="Email id">
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email id">
              </div>  
              
              <div class="form-group">
-              <input type="password" name="pwd" class="form-control" placeholder="Password">
+              <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Password">
              </div>
  
              <div class="form-group">
-               <input type="text" name="age" class="form-control" placeholder="Your Age">
+               <input type="text" name="age" id="age" class="form-control" placeholder="Your Age">
              </div>
              
             <div class="form-group">
-               <button type="submit" class="btn btn-success">SignUp</button>
+               <button type="button" id="regBtn" class="btn btn-success">SignUp</button>
              </div>
            
            </form>
@@ -100,5 +100,6 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/custom/js/register.js"></script>
   </body>
 </html>

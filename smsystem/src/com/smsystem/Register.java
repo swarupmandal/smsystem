@@ -26,7 +26,7 @@ public class Register extends HttpServlet {
     String pwd= (String)request.getParameter("pwd");
     Integer age=Integer.parseInt(request.getParameter("age"));
 		
-    response.sendRedirect("views/home.jsp");
+    response.getWriter().write("Hi,Your registration successfull with "+email+" email address!!");
 	}
 
 }
